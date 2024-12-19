@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="bio.html">Bio-data</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactBtn">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="darkModeToggle">Toggle Dark Mode</button>
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img src="834818.webp" alt="Profile Picture" class="profile-img" id="profileImg">
+                <h2>Aishwarya S </P></h2>
+                <p>Software Developer with a passion for creating innovative solutions.</p>
+            </div>
+        </section>
+        <section id="bio">
+            <h2>Objective</h2>
+            <p>To obtain a challenging position that allows me to utilize my skills and grow professionally.</p>
+        </section>
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Science in Computer Science - CIT-Gubbi,VTU University (2026)</li>
+                <li>High School - SBPS,Tumkur(2019)</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="Screenshot 2024-12-19 114209.png" alt="Project 1">
+                    <h3>Project One</h3>
+                    <p>A web application that checks for plagiarism</p>
+                </div>
+                <div class="project-card">
+                    <img src="Screenshot 2024-12-19 114501.png" alt="Project 2">
+                    <h3>Project Two</h3>
+                    <p>A website that deals with Unemployement</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;">90%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>HTML & CSS</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 95%;">95%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>React</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 80%;">80%</div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Node.js</span>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 75%;">75%</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <button id="backToTop" title="Go to top">Top</button>
+    </main>
+    <footer>
+        <p>&copy; 2023 My Resume        </p>
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+        </div>
+    </footer>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="successMessage" class="success-message" style="display: none;">Thank you for your message!</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
